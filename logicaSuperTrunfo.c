@@ -18,8 +18,52 @@
 int main() {
     // adiciona suporte à acentuação em português
     setlocale(LC_ALL, "Portuguese");
+    
     // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    
+    // variavel da carta 1
+    char estado_letra1;
+    char codigo_carta1[4];
+    char nome_cidade1[100];
+    float area1;
+    float pib1;
+    int pontos_turisticos1;
+
+    // variaveis calculadas
+
+    float densidade_populacional1;
+    float pib_per_capita1;
+
+    // variavel da carta 2
+    char estado_letra2;
+    char codigo_carta2[4];
+    char nome_cidade2[100];
+    float area2;
+    float pib2;
+    int pontos_turisticos2;
+
+    // variaveis calculadas
+
+    float densidade_populacional2;
+    float pib_per_capita2;
+
+    // seção de entrada de dados 
+
+    printf("----Desafio Super Trunfo Logíca----\n");
+    printf("----       Nível Novato      ----\n\n");
+
+
+    // cadastro da carta 1 
+    printf("-----Cadastro da Carta 1 -----\n");
+    printf("Digite uma Letra de 'A' a 'H' : ");
+    scanf(" %C", &estado_letra1);
+    printf("Digite um número de 01 a 04 (ex: A01, H04) : ");
+    scanf("%S", codigo_carta1);
+    printf("Digite o nome da Cidade: ");
+    scanf(" %[^\n]", nome_cidade1);
+    printf("Difite o número de habitantes da cidade:");
+    printf("Digite o nome da Cidade: ");
+    scanf("%f")
 
     
     // Cadastro das Cartas:
