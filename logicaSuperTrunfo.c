@@ -25,6 +25,7 @@ int main() {
     char estado_letra1;
     char codigo_carta1[4];
     char nome_cidade1[100];
+    unsigned long int populacao1;
     float area1;
     float pib1;
     int pontos_turisticos1;
@@ -38,6 +39,7 @@ int main() {
     char estado_letra2;
     char codigo_carta2[4];
     char nome_cidade2[100];
+    unsigned long int populacao2;
     float area2;
     float pib2;
     int pontos_turisticos2;
@@ -52,21 +54,63 @@ int main() {
     printf("----Desafio Super Trunfo Logíca----\n");
     printf("----       Nível Novato      ----\n\n");
 
+    // Cadastro das Cartas:
 
     // cadastro da carta 1 
     printf("-----Cadastro da Carta 1 -----\n");
     printf("Digite uma Letra de 'A' a 'H' : ");
-    scanf(" %C", &estado_letra1);
+    scanf(" %c", &estado_letra1);
     printf("Digite um número de 01 a 04 (ex: A01, H04) : ");
-    scanf("%S", codigo_carta1);
+    scanf("%s", codigo_carta1);
     printf("Digite o nome da Cidade: ");
     scanf(" %[^\n]", nome_cidade1);
     printf("Difite o número de habitantes da cidade:");
-    printf("Digite o nome da Cidade: ");
-    scanf("%f")
+    scanf("%lu", populacao1);
+    printf("Digite a Área da cidade (em KM²):");
+    scanf("%f", &area1);
+    printf("Digite o número de pontos turisticos: ");
+    scanf("%d", &pontos_turisticos1);
+    printf("\n");
 
+     // cadastro da carta 2 
+    printf("-----Cadastro da Carta 2 -----\n");
+    printf("Digite uma Letra de 'A' a 'H' : ");
+    scanf(" %c", &estado_letra2);
+    printf("Digite um número de 01 a 04 (ex: A01, H04) : ");
+    scanf("%s", codigo_carta2);
+    printf("Digite o nome da Cidade: ");
+    scanf(" %[^\n]", nome_cidade2);
+    printf("Difite o número de habitantes da cidade:");
+    scanf("%lu", populacao2);
+    printf("Digite a Área da cidade (em KM²):");
+    scanf("%f", &area2;
+    printf("Digite o número de pontos turisticos: ");
+    scanf("%d", &pontos_turisticos2);
+    printf("\n");
+
+    // -- Seção de Cáculo -- 
     
-    // Cadastro das Cartas:
+    // Cáculo para a Carta 1
+
+    densidade_populacional1 = populacao1 / area1;
+    pib_per_capita1 = (pib1 * 1000000000) / populacao1;
+
+     // Cáculo para a Carta 2
+
+    densidade_populacional2 = populacao2 / area2;
+    pib_per_capita2 = (pib2 * 1000000000) / populacao2;
+
+    // -- seção de exibição de dados -- 
+
+    // Dados da Carta 1 
+
+    printf("------------------------------\n");
+    printf("Dados Cadastrados\n");
+    printf("------------------------------\n");
+    printf("Carta1:\n");
+    printf("Código: %c%s\n", nome_cidade1);
+    
+    
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
     // utilize o código do primeiro desafio
