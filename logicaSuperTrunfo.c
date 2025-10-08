@@ -108,7 +108,29 @@ int main() {
     printf("Dados Cadastrados\n");
     printf("------------------------------\n");
     printf("Carta1:\n");
-    printf("Código: %c%s\n", nome_cidade1);
+    printf("Código: %c%s\n", estado_letra1, codigo_carta1;
+    printf("Nome da Cidade: %s\n", nome_cidade1);
+    printf("População: %lu\n", populacao1);
+    printf("Área: %.2f KM²\n", area1);
+    printf("PIB: R$ %.2f bilhões\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos1);
+    printf("Densidade Populacional: %.2f hab/KM²\n", densidade_populacional1);
+    printf("PIB per Capita: R$ %.2f\n", pib_per_capita1);
+ 
+        // Dados da Carta 2 
+
+    printf("------------------------------\n");
+    printf("Dados Cadastrados\n");
+    printf("------------------------------\n");
+    printf("Carta2:\n");
+    printf("Código: %c%s\n", estado_letra2, codigo_carta2;
+    printf("Nome da Cidade: %s\n", nome_cidade2);
+    printf("População: %lu\n", populacao2);
+    printf("Área: %.2f KM²\n", area2);
+    printf("PIB: R$ %.2f bilhões\n", pib2);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos2);
+    printf("Densidade Populacional: %.2f hab/KM²\n", densidade_populacional2);
+    printf("PIB per Capita: R$ %.2f\n", pib_per_capita2);
     
     
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
