@@ -64,10 +64,12 @@ int main() {
     scanf("%s", codigo_carta1);
     printf("Digite o nome da Cidade: ");
     scanf(" %[^\n]", nome_cidade1);
-    printf("Difite o número de habitantes da cidade:");
-    scanf("%lu", populacao1);
+    printf("Digite o número de habitantes da cidade:");
+    scanf("%lu", &populacao1);
     printf("Digite a Área da cidade (em KM²):");
     scanf("%f", &area1);
+     printf("Digite o PIB da cidade (em bilhoes); ");
+    scanf("%f", &pib1);
     printf("Digite o número de pontos turisticos: ");
     scanf("%d", &pontos_turisticos1);
     printf("\n");
@@ -80,10 +82,12 @@ int main() {
     scanf("%s", codigo_carta2);
     printf("Digite o nome da Cidade: ");
     scanf(" %[^\n]", nome_cidade2);
-    printf("Difite o número de habitantes da cidade:");
-    scanf("%lu", populacao2);
+    printf("Digite o número de habitantes da cidade:");
+    scanf("%lu", &populacao2);
     printf("Digite a Área da cidade (em KM²):");
-    scanf("%f", &area2;
+    scanf("%f", &area2);
+    printf("Digite o PIB da cidade (em bilhoes); ");
+    scanf("%f", &pib2);
     printf("Digite o número de pontos turisticos: ");
     scanf("%d", &pontos_turisticos2);
     printf("\n");
@@ -133,6 +137,24 @@ int main() {
     printf("PIB per Capita: R$ %.2f\n", pib_per_capita2);
     
     
+    // batalha de cartas 
+
+    printf("\n------Batalha------\n");
+    printf("Comparação de cartas (Atributo: População): \n\n");
+    printf("Carta 1 - %s (%c%s): %lu\n", nome_cidade1, estado_letra1, codigo_carta1, populacao1);
+    printf("Carta 2 - %s (%c%s): %lu\n", nome_cidade2, estado_letra2, codigo_carta2, populacao2);
+
+    // estrutura de decisão para declarar o vencedor
+    if (populacao1 > populacao2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", nome_cidade1);
+    } else if (populacao2 > populacao1) {
+        printf("Resultado: Carta 2 (%s) venceu!\n", nome_cidade2);
+    } else {
+    printf("Resultado: Empate!\n");         
+    }
+    printf("Fim de jogo");
+    printf("----------------------------------\n");
+
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
     // utilize o código do primeiro desafio
