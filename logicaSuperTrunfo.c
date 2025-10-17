@@ -49,6 +49,9 @@ int main() {
     float densidade_populacional2;
     float pib_per_capita2;
 
+    // opção para o jogador
+    int opcao_batalha;
+
     // seção de entrada de dados 
 
     printf("----Desafio Super Trunfo Logíca----\n");
