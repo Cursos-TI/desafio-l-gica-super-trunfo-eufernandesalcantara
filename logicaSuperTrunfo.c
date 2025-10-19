@@ -140,14 +140,14 @@ int main() {
     printf("PIB per Capita: R$ %.2f\n", pib_per_capita2);
     
     
-    // batalha de cartas 
+    /*  batalha de cartas
 
     printf("\n------Batalha------\n");
     printf("Comparação de cartas (Atributo: População): \n\n");
     printf("Carta 1 - %s (%c%s): %lu\n", nome_cidade1, estado_letra1, codigo_carta1, populacao1);
     printf("Carta 2 - %s (%c%s): %lu\n", nome_cidade2, estado_letra2, codigo_carta2, populacao2);
 
-    // estrutura de decisão para declarar o vencedor
+    // estrutura de decisão para declarar o vencedor   
     if (populacao1 > populacao2) {
         printf("Resultado: Carta 1 (%s) venceu!\n", nome_cidade1);
     } else if (populacao2 > populacao1) {
@@ -155,9 +155,72 @@ int main() {
     } else {
     printf("Resultado: Empate!\n");         
     }
-    printf("Fim de jogo");
-    printf("----------------------------------\n");
+    printf("Fim de jogo"); 
+    printf("----------------------------------\n"); */
 
+    // batalha de cartas interativa
+
+    printf("\n---- HORA DA BATALHA! ----\n");
+    printf("Escolha o atributo para comparar:\n");
+    printf("1 - População\n");
+    printf("2 - Área (KM²)\n");
+    printf("3 - PIB (em bilhões)\n");
+    printf("4 - Pontos Turísticos\n");
+    printf("5 - Densidade Populacional (menor vence)\n");
+    printf("Digite sua escolha (1-5): \n");
+
+    // recebe a opção
+    scanf("%d", &opcao_batalha);
+
+    // acões do menu 
+    switch (opcao_batalha) {
+        case 1: // escolheu População
+            printf("\n--- Comparando por: População ---\n");
+            printf("Carta 1 (%s): %lu habitantes\n", nome_cidade1, populacao1);
+            printf("Carta 2 (%s): %lu habitantes\n", nome_cidade2, populacao2)");
+        if (populacao1 > populacao2) {
+            print("\nResutado: Carta 1 (%s) venceu!\n", nome_cidade1);
+        } else if (populacao2 > populacao1) {
+            print("\nResutado: Carta 2 (%s) venceu!\n", nome_cidade2);
+        } else {
+            printf("Resultado: Empate!\n");
+        }
+        break: // Fim do caso 1  
+    
+        case 2: // escolheu Área
+            printf("\n--- Comparando por: Área ---\n");
+            printf("Carta 1 (%s): %.2f KM²\n", nome_cidade1, area1);
+            printf("Carta 2 (%s): %.2f KM²\n", nome_cidade2, area2)");
+        if (area1 > area2) {
+            print("\nResutado: Carta 1 (%s) venceu!\n", nome_cidade1);
+        } else if (area2 > area1) {
+            print("\nResutado: Carta 2 (%s) venceu!\n", nome_cidade2);
+        } else {
+            printf("Resultado: Empate!\n");
+        }
+        break: // Fim do caso 2
+        
+        case 3: // escolheu PIB
+            printf("\n--- Comparando por: PIB ---\n");
+            printf("Carta 1 (%s): %.2f bilhões\n", nome_cidade1, pib1);
+            printf("Carta 2 (%s): %.2f bilhões\n", nome_cidade2, pib2));
+        if (pib1 > pib2) {
+            print("\nResutado: Carta 1 (%s) venceu!\n", nome_cidade1);
+        } else if (pib2 > pib1) {
+            print("\nResutado: Carta 2 (%s) venceu!\n", nome_cidade2);
+        } else {
+            printf("Resultado: Empate!\n");
+        }
+        break: // Fim do caso 3
+    
+    
+    case constant expression:
+        /* code */
+        break;
+    
+    default:
+        break;
+    }
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
     // utilize o código do primeiro desafio
