@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <locale.h> // biblioteca para poder usar acentos do portugues
-
+#include <string.h> // biblioteca para manipulação de strings
 
 // Desafio Super Trunfo - Países
 // Tema 1 - 🚩 Objetivos:
@@ -195,9 +195,7 @@ int main() {
             printf("Opção inválida! Você já escolheu esse atributo. Tente novamente.\n");
             }
         
-        // recebe a opção de batalha da carta 2
-        scanf("%d", &opcao_batalha2);
-
+       
     } while (opcao_batalha2 == opcao_batalha1);
 
      // nova logica
@@ -265,10 +263,20 @@ int main() {
         printf(" SOMA TOTAL = %.2f\n", soma_carta2);
         printf("-----------------------------------------------\n");
 
-        // declaração do vencedor}
-    /*
+        // Nova lógica para declaração do vencedor
+    
+    if (soma_carta1 > soma_carta2) {
+        printf("\n Vencedor: Carta 1 (%s) vence com a maior soma! \n", nome_cidade1);
+    } else if (soma_carta2 > soma_carta1) {
+        printf("\n Vencedor: Carta 2 (%s) vence com a maior soma! \n", nome_cidade2);
+    } else {
+        printf("\nResultado: Empate!\n");
+    }
 
-    // acões do menu 
+    printf("\n ------- FIM DE JOGO -------\n");
+
+    /*
+       // acões do menu 
     switch (opcao_batalha) {
         case 1: // escolheu População
             printf("\n--- Comparando por: População ---\n");
