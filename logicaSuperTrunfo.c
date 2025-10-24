@@ -145,24 +145,6 @@ int main() {
     printf("PIB per Capita: R$ %.2f\n", pib_per_capita2);
     
     
-    /*  batalha de cartas
-
-    printf("\n------Batalha------\n");
-    printf("Comparação de cartas (Atributo: População): \n\n");
-    printf("Carta 1 - %s (%c%s): %lu\n", nome_cidade1, estado_letra1, codigo_carta1, populacao1);
-    printf("Carta 2 - %s (%c%s): %lu\n", nome_cidade2, estado_letra2, codigo_carta2, populacao2);
-
-    // estrutura de decisão para declarar o vencedor   
-    if (populacao1 > populacao2) {
-        printf("Resultado: Carta 1 (%s) venceu!\n", nome_cidade1);
-    } else if (populacao2 > populacao1) {
-        printf("Resultado: Carta 2 (%s) venceu!\n", nome_cidade2);
-    } else {
-    printf("Resultado: Empate!\n");         
-    }
-    printf("Fim de jogo"); 
-    printf("----------------------------------\n"); */
-
     // batalha de cartas interativa
 
     printf("\n---- HORA DA BATALHA! ----\n");
