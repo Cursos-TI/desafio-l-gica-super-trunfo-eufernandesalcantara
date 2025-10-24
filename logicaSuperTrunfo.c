@@ -198,10 +198,75 @@ int main() {
         // recebe a opção de batalha da carta 2
         scanf("%d", &opcao_batalha2);
 
-        if (opcao_batalha2 == opcao_batalha1) {
-            printf("Opção inválida! Você já escolheu esse atributo. Tente novamente.\n");
-        }
-    }
+    } while (opcao_batalha2 == opcao_batalha1);
+
+     // nova logica
+     // switch para o atributo
+     switch (opcao_batalha1) {
+        case 1: strcpy(nome_attr1, "População");
+                valor_attr1_carta1 = populacao1;
+                valor_attr1_carta2 = populacao2;
+                break;
+        case 2: strcpy(nome_attr1, "Área");
+                valor_attr1_carta1 = area1;
+                valor_attr1_carta2 = area2;
+                break;
+        case 3: strcpy(nome_attr1, "PIB");
+                valor_attr1_carta1 = pib1;
+                valor_attr1_carta2 = pib2;
+                break;
+        case 4: strcpy(nome_attr1, "Pontos Turísticos");
+                valor_attr1_carta1 = pontos_turisticos1;
+                valor_attr1_carta2 = pontos_turisticos2;
+                break;
+        case 5: strcpy(nome_attr1, "Densidade Populacional");
+                valor_attr1_carta1 = densidade_populacional1;
+                valor_attr1_carta2 = densidade_populacional2;
+                break;
+     }
+        switch (opcao_batalha2) {
+        case 1: strcpy(nome_attr2, "População");
+                valor_attr2_carta1 = populacao1;
+                valor_attr2_carta2 = populacao2;
+                break;
+        case 2: strcpy(nome_attr2, "Área");
+                valor_attr2_carta1 = area1;
+                valor_attr2_carta2 = area2;
+                break;
+        case 3: strcpy(nome_attr2, "PIB");
+                valor_attr2_carta1 = pib1;
+                valor_attr2_carta2 = pib2;
+                break;
+        case 4: strcpy(nome_attr2, "Pontos Turísticos");
+                valor_attr2_carta1 = pontos_turisticos1;
+                valor_attr2_carta2 = pontos_turisticos2;
+                break;
+        case 5: strcpy(nome_attr2, "Densidade Populacional");
+                valor_attr2_carta1 = densidade_populacional1;
+                valor_attr2_carta2 = densidade_populacional2;
+                break;
+     }
+        // soma dos valores dos atributos escolhidos
+        soma_carta1 = valor_attr1_carta1 + valor_attr2_carta1;
+        soma_carta2 = valor_attr1_carta2 + valor_attr2_carta2;
+
+        // exibição dos resultados
+        printf("\n--- Resultado da Batalha ---\n");
+        printf("Atributos escolhidos: \n %s e %s\n", nome_attr1, nome_attr2);
+        printf("-----------------------------------------------\n");
+        printf("Carta 1 - %s\n", nome_cidade1);
+        printf("%s: %.2f\n", nome_attr1, valor_attr1_carta1);
+        printf("%s: %.2f\n", nome_attr2, valor_attr2_carta1);
+        printf(" SOMA TOTAL = %.2f\n", soma_carta1);
+        printf("-----------------------------------------------\n");
+        printf("Carta 2 - %s\n", nome_cidade2);
+        printf("%s: %.2f\n", nome_attr1, valor_attr1_carta2);
+        printf("%s: %.2f\n", nome_attr2, valor_attr2_carta2);
+        printf(" SOMA TOTAL = %.2f\n", soma_carta2);
+        printf("-----------------------------------------------\n");
+
+        // declaração do vencedor}
+    /*
 
     // acões do menu 
     switch (opcao_batalha) {
@@ -275,7 +340,7 @@ int main() {
         printf("\nOpção inválida! Por favor, escolha um número de 1 a 5. \n");
         break;
     }
-    printf("\n-------- FIM DE JOGO -------\n");
+    printf("\n-------- FIM DE JOGO -------\n"); */
    
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
