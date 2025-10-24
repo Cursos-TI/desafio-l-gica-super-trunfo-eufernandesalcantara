@@ -56,10 +56,7 @@ int main() {
     float valor_attr1_carta2 = 0, valor_attr2_carta2 = 0;// valores dos atributos para carta 2
     float soma_carta1, soma_carta2; // soma finais para comparação
 
-    // opção para o jogador
-
-    int opcao_batalha;
-
+    
     // seção de entrada de dados 
 
     printf("----Desafio Super Trunfo Logíca----\n");
@@ -169,7 +166,7 @@ int main() {
     // batalha de cartas interativa
 
     printf("\n---- HORA DA BATALHA! ----\n");
-    printf("Escolha o primeiro atributo para comparar:\n";
+    printf("Escolha o primeiro atributo para comparar:\n");
     printf("1 - População\n");
     printf("2 - Área (KM²)\n");
     printf("3 - PIB (em bilhões)\n");
