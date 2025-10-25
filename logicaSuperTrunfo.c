@@ -180,26 +180,11 @@ int main() {
      // nova logica
      // switch para o atributo
      switch (opcao_batalha1) {
-        case 1: strcpy(nome_attr1, "População");
-                valor_attr1_carta1 = populacao1;
-                valor_attr1_carta2 = populacao2;
-                break;
-        case 2: strcpy(nome_attr1, "Área");
-                valor_attr1_carta1 = area1;
-                valor_attr1_carta2 = area2;
-                break;
-        case 3: strcpy(nome_attr1, "PIB");
-                valor_attr1_carta1 = pib1;
-                valor_attr1_carta2 = pib2;
-                break;
-        case 4: strcpy(nome_attr1, "Pontos Turísticos");
-                valor_attr1_carta1 = pontos_turisticos1;
-                valor_attr1_carta2 = pontos_turisticos2;
-                break;
-        case 5: strcpy(nome_attr1, "Densidade Populacional");
-                valor_attr1_carta1 = densidade_populacional1;
-                valor_attr1_carta2 = densidade_populacional2;
-                break;
+        case 1: strcpy(nome_attr1, "População");valor_attr1_carta1 = populacao1;valor_attr1_carta2 = populacao2;break;
+        case 2: strcpy(nome_attr1, "Área");valor_attr1_carta1 = area1;valor_attr1_carta2 = area2;break;
+        case 3: strcpy(nome_attr1, "PIB");valor_attr1_carta1 = pib1;valor_attr1_carta2 = pib2;break;
+        case 4: strcpy(nome_attr1, "Pontos Turísticos");valor_attr1_carta1 = pontos_turisticos1;valor_attr1_carta2 = pontos_turisticos2;break;
+        case 5: strcpy(nome_attr1, "Densidade Populacional"); valor_attr1_carta1 = densidade_populacional1; valor_attr1_carta2 = densidade_populacional2; break;
      }
         switch (opcao_batalha2) {
         case 1: strcpy(nome_attr2, "População");
